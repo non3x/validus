@@ -55,10 +55,11 @@ class Validus extends Validators\Base {
     /**
      * Enable user to «copy» rules from one property
      * to another in a snap. To avoid error message
-     * collision new rules are instantiated for specified
-     * property with the source rule condition but default
-     * error message.
-     *
+     * collision pay attention to not put propertyName
+     * into messages, this will result in same messages
+     * for two different properties. If you want custom
+     * error messages for each property - don't use sameAs().
+     * 
      * @param type $propertyName
      * @return \Validus\Validus
      * @throws Exceptions\InvalidArgument
@@ -73,7 +74,7 @@ class Validus extends Validators\Base {
             foreach ($property->getAttachedRules() as $rule) {
                 foreach ($this->workOnProperties as $pName) {
                     $this->addRule(
-                            $pName, $rule->__new($rule->getCondition(), $pName)
+                            $pName, $rule->__new($rule->getCondition(), $pName, $rule->getErrorMessage())
                     );
                 }
             }
