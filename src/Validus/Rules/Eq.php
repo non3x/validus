@@ -15,7 +15,7 @@ class Eq extends Base {
     }
 
     public function setDefaultErrorMessage() {
-        $this->setErrorMessage("{$this->propertyName} must be equal to {$this->condition}");
+        $this->setErrorMessage("must be equal to {$this->condition}");
     }
 
 }

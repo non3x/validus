@@ -23,7 +23,7 @@ class Email extends Base {
     }
 
     public function setDefaultErrorMessage() {
-        $this->setErrorMessage("{$this->propertyName} is not in valid format");
+        $this->setErrorMessage("is not in valid format");
     }
 
 }

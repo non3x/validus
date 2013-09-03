@@ -17,7 +17,7 @@ class Length extends Base {
     }
 
     public function setDefaultErrorMessage() {
-        $this->setErrorMessage("{$this->propertyName} length must be equal to {$this->condition}");
+        $this->setErrorMessage("length must be equal to {$this->condition}");
     }
 
 }

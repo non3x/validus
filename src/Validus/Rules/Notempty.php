@@ -15,7 +15,7 @@ class Notempty extends Base {
     }
 
     public function setDefaultErrorMessage() {
-        $this->setErrorMessage("{$this->propertyName} must be set");
+        $this->setErrorMessage("can't be empty");
     }
 
 }

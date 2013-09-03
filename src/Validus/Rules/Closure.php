@@ -28,7 +28,7 @@ class Closure extends Base {
     }
 
     public function setDefaultErrorMessage() {
-        $this->setErrorMessage("Condition for {$this->propertyName} is not met");
+        $this->setErrorMessage("Condition is not met");
     }
 
 }

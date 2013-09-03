@@ -15,7 +15,7 @@ class Minlength extends Base {
     }
 
     public function setDefaultErrorMessage() {
-        $this->setErrorMessage("{$this->propertyName} minimum length is {$this->condition}");
+        $this->setErrorMessage("minimum required length is {$this->condition}");
     }
 
 }

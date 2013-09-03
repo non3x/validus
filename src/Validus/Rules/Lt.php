@@ -15,7 +15,7 @@ class Lt extends Base {
     }
 
     public function setDefaultErrorMessage() {
-        $this->setErrorMessage("{$this->propertyName} must be less than {$this->condition}");
+        $this->setErrorMessage("must be less than {$this->condition}");
     }
 
 }

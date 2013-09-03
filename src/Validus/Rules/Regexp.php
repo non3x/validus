@@ -15,7 +15,7 @@ class Regexp extends Base {
     }
 
     public function setDefaultErrorMessage() {
-        $this->setErrorMessage("{$this->propertyName}  doesn't match {$this->condition}");
+        $this->setErrorMessage("regular expression {$this->condition} mismatch");
     }
 
 }

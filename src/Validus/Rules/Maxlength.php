@@ -15,7 +15,7 @@ class Maxlength extends Base {
     }
 
     public function setDefaultErrorMessage() {
-        $this->setErrorMessage("{$this->propertyName} maximum length is {$this->condition}");
+        $this->setErrorMessage("maximum length is {$this->condition}");
     }
 
 }

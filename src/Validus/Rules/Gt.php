@@ -15,7 +15,7 @@ class Gt extends Base {
     }
 
     public function setDefaultErrorMessage() {
-        $this->setErrorMessage("{$this->propertyName} must be greater than {$this->condition}");
+        $this->setErrorMessage("must be greater than {$this->condition}");
     }
 
 }
