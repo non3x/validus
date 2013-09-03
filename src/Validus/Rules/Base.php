@@ -33,8 +33,8 @@ abstract class Base {
     }
 
     // We need this method for «sameAs» functionality
-    public function __new($condition, $errorMessage = null) {
-        return new static($condition, $errorMessage);
+    public function __new($condition, $propertyName, $errorMessage = null) {
+        return new static($condition, $propertyName, $errorMessage);
     }
 
     abstract protected function applyTo($targetValue);
