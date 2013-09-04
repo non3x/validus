@@ -3,9 +3,7 @@
 error_reporting(E_STRICT | E_ALL);
 ini_alter('display_errors', 'on');
 
-include 'SplClassLoader.php';
-$classLoader = new SplClassLoader('Validus', dirname(__FILE__) . '/../src');
-$classLoader->register();
+require '../vendor/autoload.php';
 
 // Instantiate validator
 $validation = new \Validus\Validus();

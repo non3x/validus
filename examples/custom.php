@@ -10,10 +10,8 @@ namespace {
     error_reporting(E_STRICT | E_ALL);
     ini_alter('display_errors', 'on');
 
-    include 'SplClassLoader.php';
-    $classLoader = new \SplClassLoader('Validus', dirname(__FILE__) . '/../src');
-    $classLoader->register();
-
+    require '../vendor/autoload.php';
+    
 // In case you want custom validation Rule, you should
 // extend \Validus\Rules\Base class, and implement
 // two methods: applyTo($targetValue) and setDefaultErrorMessage()
