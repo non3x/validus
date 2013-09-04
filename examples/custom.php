@@ -11,7 +11,7 @@ namespace {
     ini_alter('display_errors', 'on');
 
     require '../vendor/autoload.php';
-    
+
 // In case you want custom validation Rule, you should
 // extend \Validus\Rules\Base class, and implement
 // two methods: applyTo($targetValue) and setDefaultErrorMessage()
