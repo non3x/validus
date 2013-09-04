@@ -35,7 +35,7 @@ abstract class Base {
      * @throws \Validus\Exceptions\InvalidArgument
      * @return true
      */
-    protected function addRule($pName, $rule) {
+    public function addRule($pName, $rule) {
         if (!$this->isValidPropertyName($pName)) {
             throw new Exceptions\InvalidArgument("Property name can't be empty");
         }
